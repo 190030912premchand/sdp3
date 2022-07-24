@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="data:image/jpeg;base64,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" style="width:45%;" class="w3-round"><br><br>
+    </a><h4><b>My Courses</b></h4>
+    <a href="C:\Users\DELL\Desktop\ERP\erp\homepage.html">Home</a>
+    <p class="w3-text-grey">Student Courses</p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>My Courses</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+  </div>
+  <div class="w3-panel w3-large">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>My Courses</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">Filter:</span> 
+      <button class="w3-button w3-black">ALL</button>
+      <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Design</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Photos</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Art</button>
+    </div>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://www.iimtindia.net/Blog/wp-content/uploads/2021/08/Data-Science-Future-scope.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Data science</b></p>
+        <p>Data science is the field of study that combines domain expertise, programming skills, and knowledge of mathematics and statistics to extract meaningful insights from data.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://canopylab.com/wp-content/uploads/2019/11/shutterstock_1455391502-2.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Natural Language Processing</b></p>
+        <p>Natural language processing (NLP) refers to the branch of computer science—and more specifically, the branch of artificial intelligence or AI—concerned with giving computers the ability to understand text.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="https://miro.medium.com/max/1200/1*ffQmZUqmR3ZZe-apYCrygw.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>UX Design</b></p>
+        <p>User Experience Design (UXD or UED) is a design process whose sole objective is to design a system that offers a great experience to its users.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://content.techgig.com/photo/78556739/5-machine-learning-concepts-you-must-understand-to-clear-a-data-science-interview.jpg?107588" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Machine Learning</b></p>
+        <p>Machine learning (ML) is a type of artificial intelligence (AI) that allows software applications to become more accurate at predicting outcomes without being explicitly programmed to do so.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://i.itworldcanada.com/wp-content/uploads/2021/08/Illustration-Of-Cloud-Comp-1050x450-1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Cloud Computing</b></p>
+        <p>Cloud computing is on-demand access, via the internet, to computing resources—applications, servers (physical servers and virtual servers), data storage, development tools, networking capabilities, and more—hosted at a remote data center managed by a cloud services provider.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="https://study.com/cimages/course-image/computer-science-202-network-and-system-security_1030285_large.jpeg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Computer Networking</b></p>
+        <p>A computer network is a set of devices connected through links. A node can be computer, printer, or any other device capable of sending or receiving the data. The links connecting the nodes are known as communication channels.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+
+  <!-- Images of Me -->
+  <div class="w3-row-padding w3-padding-16" id="about">
+    <div class="w3-col m6">
+      <img src="avatar_g.jpg" alt="Me" style="width:100%">
+    </div>
+    <div class="w3-col m6">
+      <img src="me2.jpg" alt="Me" style="width:100%">
+    </div>
+  </div>
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b>About Me</b></h4>
+    <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    <hr>
+    
+    <h4>Technical Skills</h4>
+    <!-- Progress bars / Skills -->
+    <p>Photography</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:95%">95%</div>
+    </div>
+    <p>Web Design</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
+    </div>
+    <p>Photoshop</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:80%">80%</div>
+    </div>
+    <p>
+      <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+        <i class="fa fa-download w3-margin-right"></i>Download Resume
+      </button>
+    </p>
+    <hr>
+    
+    <h4>How much I charge</h4>
+    <!-- Pricing Tables -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">1GB Storage</li>
+          <li class="w3-padding-16">Mail Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 10</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-teal w3-xlarge w3-padding-32">Pro</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">50GB Storage</li>
+          <li class="w3-padding-16">Endless Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 25</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="w3-third">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">Unlimited Storage</li>
+          <li class="w3-padding-16">Endless Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 25</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="contact"><b>Contact Me</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>email@email.com</p>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Chicago, US</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>512312311</p>
+      </div>
+    </div>
+    <hr class="w3-opacity">
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h3>FOOTER</h3>
+      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>BLOG POSTS</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Lorem</span><br>
+          <span>Sed mattis nunc</span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Ipsum</span><br>
+          <span>Praes tinci sed</span>
+        </li> 
+      </ul>
+    </div>
+
+    <div class="w3-third">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">London</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">DIY</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Family</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Shopping</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Games</span>
+      </p>
+    </div>
+
+  </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
